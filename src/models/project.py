@@ -1,3 +1,4 @@
+# src/models/project.py
 import uuid
 from sqlalchemy import Column, String
 from src.db.base import Base

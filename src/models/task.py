@@ -9,3 +9,5 @@ class Task(Base):
     title = Column(String, nullable=False)
     status = Column(String, default="todo")
     assigned_to = Column(String, ForeignKey("users.id"), nullable=True)
+    project_id = Column(String, ForeignKey("projects.id"), nullable=True)
+    assigned_to = Column(String, ForeignKey("users.id"), nullable=True)
